@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors | Clear Vision Eye Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header { background: var(--dark-blue); color: white; padding: 100px 0 60px; text-align: center; }
+        .search-bar { max-width: 600px; margin: 0 auto 40px; display: flex; gap: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="javascript:history.back()" class="floating-back-btn">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-contact">
+                <span><i class="fas fa-phone-alt"></i> Emergency: 24/7 +91 98765 43210</span>
+                <span><i class="fas fa-envelope"></i> info@clearvision.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-eye"></i> Clear Vision</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html" class="active">Doctors</a>
+                <a href="technology.html">Technology</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="appointment.html" class="btn btn-primary pulse-button" style="color:white; margin-left:15px;">Book Appointment</a>
+            </div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="page-header reveal-up">
+        <div class="container">
+            <h1>Our Expert Doctors</h1>
+            <p>Meet our highly qualified team of eye specialists.</p>
+        </div>
+    </div>
+
+    <section class="section container">
+        <div class="search-bar reveal-up">
+            <input type="text" class="form-control" placeholder="Search doctors by name or specialty...">
+            <button class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+        </div>
+        
+        <div class="grid grid-3">
+            <!-- Doctor Cards similar to home page -->
+            <div class="doctor-card reveal-up">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" alt="Dr. Arvind Kumar" class="doctor-img">
+                <div class="doctor-info">
+                    <h4>Dr. Arvind Kumar</h4>
+                    <p>Cataract Surgeon</p>
+                    <a href="appointment.html" class="btn btn-outline" style="width: 100%;">Book Appointment</a>
+                </div>
+            </div>
+            <div class="doctor-card reveal-up" style="transition-delay: 0.1s;">
+                <img src="https://img.freepik.com/premium-photo/portrait-young-beautiful-smiling-indian-female-doctor-standing-isolated-background_1025753-91537.jpg?w=2000" alt="Dr. Priya Natarajan" class="doctor-img">
+                <div class="doctor-info">
+                    <h4>Dr. Priya Natarajan</h4>
+                    <p>Retina Specialist</p>
+                    <a href="appointment.html" class="btn btn-outline" style="width: 100%;">Book Appointment</a>
+                </div>
+            </div>
+            <div class="doctor-card reveal-up" style="transition-delay: 0.2s;">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Dr. Rohan Shetty" class="doctor-img">
+                <div class="doctor-info">
+                    <h4>Dr. Rohan Shetty</h4>
+                    <p>Glaucoma Specialist</p>
+                    <a href="appointment.html" class="btn btn-outline" style="width: 100%;">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark-blue); color: white; padding: 40px 0;">
+        <div class="container" style="text-align: center;">&copy; 2026 Clear Vision Eye Hospital.</div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animation.js"></script>
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-bottom-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="vision-test.html" class="nav-item">
+            <i class="fas fa-eye"></i>
+            <span>Test</span>
+        </a>
+        <a href="appointment.html" class="nav-item">
+            <i class="far fa-calendar-alt"></i>
+            <span>Book</span>
+        </a>
+        <a href="tel:+919876543210" class="nav-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call</span>
+        </a>
+    </div>
+</body>
+</html>
+

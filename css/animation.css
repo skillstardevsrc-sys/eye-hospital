@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Animations & Effects
+   ========================================================================== */
+
+/* Fade Up Reveal */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade Left Reveal */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade Right Reveal */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Levitate Glow Animation */
+@keyframes levitateGlow {
+  0% { 
+    transform: translateY(0) scale(1);
+    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.1);
+  }
+  50% { 
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 20px 30px rgba(14, 165, 233, 0.25);
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+  100% { 
+    transform: translateY(0) scale(1);
+    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.1);
+  }
+}
+
+.animate-float {
+  animation: levitateGlow 6s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: levitateGlow 6s ease-in-out infinite 3s;
+}
+
+/* Pulse Glow */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(14, 165, 233, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
+}
+
+.pulse-button {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Ripple Effect (JS triggered) */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-anim 0.6s linear;
+  background-color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+@keyframes ripple-anim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Loading Screen */
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  background: var(--background);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.loader-wrapper.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.eye-loader {
+  width: 60px;
+  height: 60px;
+  border: 4px solid var(--primary-blue);
+  border-radius: 50% 0 50% 0;
+  transform: rotate(45deg);
+  position: relative;
+  animation: blink 2s infinite ease-in-out;
+}
+
+.eye-loader::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  background: var(--dark-blue);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes blink {
+  0%, 100% { transform: rotate(45deg) scale(1); }
+  50% { transform: rotate(45deg) scale(0.2, 1.2); }
+}

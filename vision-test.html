@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Vision Test | Clear Vision Eye Hospital">
+    <title>Online Vision Test | Clear Vision Eye Hospital</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: var(--background-alt);
+        }
+        .vision-test-container {
+            max-width: 800px;
+            margin: 60px auto 100px;
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+        }
+        .snellen-chart {
+            background: #fff;
+            padding: 40px 20px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            margin: 40px auto;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: #111;
+            max-width: 500px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.02);
+        }
+        .chart-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+            letter-spacing: 15px;
+            border-bottom: 1px solid #f5f5f5;
+            padding-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        .chart-row:hover {
+            background: rgba(10, 132, 255, 0.05);
+            cursor: pointer;
+        }
+        .chart-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .r1 { font-size: 8rem; }
+        .r2 { font-size: 6rem; }
+        .r3 { font-size: 4rem; }
+        .r4 { font-size: 3rem; }
+        .r5 { font-size: 2rem; }
+        .r6 { font-size: 1.5rem; letter-spacing: 20px; }
+        .r7 { font-size: 1rem; letter-spacing: 25px; color: red; border-bottom: 2px solid red; padding-bottom: 15px; margin-bottom: 25px; }
+        .r8 { font-size: 0.8rem; letter-spacing: 30px; color: green; border-bottom: 2px solid green; padding-bottom: 15px; margin-bottom: 25px; }
+        .r9 { font-size: 0.6rem; letter-spacing: 35px; }
+        
+        @media (max-width: 768px) {
+            .r1 { font-size: 4rem; }
+            .r2 { font-size: 3rem; }
+            .r3 { font-size: 2rem; }
+            .r4 { font-size: 1.5rem; }
+            .r5 { font-size: 1.2rem; }
+            .r6 { font-size: 1rem; letter-spacing: 10px; }
+            .r7 { font-size: 0.8rem; letter-spacing: 12px; }
+            .r8 { font-size: 0.7rem; letter-spacing: 15px; }
+            .r9 { font-size: 0.6rem; letter-spacing: 15px; }
+            .chart-row { gap: 10px; letter-spacing: 10px; }
+        }
+
+        .instructions {
+            background: #F5F5F7;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            margin-bottom: 40px;
+            border-left: 4px solid var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="javascript:history.back()" class="floating-back-btn">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <!-- Top Bar -->
+    <div class="top-bar" style="background: #E8F0FE; color: var(--dark-blue); padding: 8px 0; font-size: 0.85rem; font-weight: 500;">
+        <div class="container top-bar-content" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="top-bar-left">
+                <span>Welcome to Clear Vision Eye Hospital</span>
+            </div>
+            <div class="top-bar-right" style="display: flex; gap: 20px;">
+                <span>Emergency Care 24/7</span>
+                <span><i class="fas fa-phone-alt" style="color: var(--primary-blue);"></i> +91 98765 43210</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass-panel" style="padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.05); transition: all 0.3s ease;">
+        <div class="container nav-container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                <i class="fas fa-eye" style="font-size: 2.2rem; color: var(--primary-blue); filter: drop-shadow(0 2px 5px rgba(10,132,255,0.3));"></i>
+                <div style="display: flex; flex-direction: column;">
+                    <span style="font-size: 1.5rem; font-weight: 800; color: var(--dark-blue); line-height: 1; letter-spacing: -0.5px;">CLEAR VISION</span>
+                    <span style="font-size: 0.75rem; font-weight: 600; color: var(--text-muted); letter-spacing: 2px;">EYE HOSPITAL</span>
+                </div>
+            </a>
+            
+            <div class="nav-links" style="display: flex; gap: 28px; align-items: center;">
+                <a href="index.html" style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Home</a>
+                <a href="about.html" style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">About Us</a>
+                <a href="services.html" style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Services</a>
+                <a href="doctors.html" style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Doctors</a>
+                <a href="technology.html" style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Technology</a>
+                <a href="contact.html" style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Contact</a>
+            </div>
+            
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <a href="vision-test.html" class="btn" style="color: var(--primary-blue); padding: 10px 20px; border-radius: 30px; font-weight: 600; text-decoration: none; background: rgba(10,132,255,0.1); transition: all 0.2s;">Vision Test <i class="fas fa-eye" style="margin-left: 5px;"></i></a>
+                <a href="appointment.html" class="btn btn-primary pulse-button" style="color:white; padding: 12px 28px; border-radius: 30px; font-weight: 600; display: flex; align-items: center; gap: 8px; text-decoration: none; background: var(--gradient-primary); border: none; box-shadow: var(--shadow-glow);">Book Appointment</a>
+                <div class="mobile-menu-btn" style="width: 45px; height: 45px; border-radius: 50%; background: var(--background-alt); display: flex; justify-content: center; align-items: center; cursor: pointer; color: var(--text-main);">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="vision-test-container reveal-up">
+            <span style="color: var(--primary-blue); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1.5px;">Online Self-Assessment</span>
+            <h1 style="color: var(--dark-blue); font-size: 2.5rem; margin-bottom: 20px;">Snellen Vision Chart</h1>
+            
+            <div class="instructions">
+                <h3 style="margin-bottom: 10px; color: var(--dark-blue);"><i class="fas fa-info-circle" style="color: var(--primary-blue);"></i> How to take the test</h3>
+                <ul style="margin-left: 20px; color: var(--text-main); line-height: 1.6;">
+                    <li>Sit exactly <strong>1 meter (3 feet)</strong> away from your screen.</li>
+                    <li>Cover your left eye with your hand (do not press on the eye).</li>
+                    <li>Read the letters on the chart from top to bottom.</li>
+                    <li>Repeat the process for your right eye.</li>
+                    <li><em>Note: This is a basic screening tool and does not replace a professional clinical eye exam.</em></li>
+                </ul>
+            </div>
+
+            <div class="snellen-chart">
+                <div class="chart-row r1">E</div>
+                <div class="chart-row r2">F P</div>
+                <div class="chart-row r3">T O Z</div>
+                <div class="chart-row r4">L P E D</div>
+                <div class="chart-row r5">P E C F D</div>
+                <div class="chart-row r6">E D F C Z P</div>
+                <div class="chart-row r7">F E L O P Z D</div>
+                <div class="chart-row r8">D E F P O T E C</div>
+                <div class="chart-row r9">L E F O D P C T</div>
+            </div>
+
+            <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #eee;">
+                <h3 style="margin-bottom: 15px; color: var(--dark-blue);">Having trouble reading the <span style="color: red;">Red</span> or <span style="color: green;">Green</span> lines?</h3>
+                <p style="color: var(--text-muted); margin-bottom: 25px;">You may have a refractive error or require vision correction. Schedule a comprehensive eye examination with our specialists today.</p>
+                <a href="appointment.html" class="btn btn-primary pulse-button" style="border-radius: 30px; padding: 12px 30px; display: inline-flex; align-items: center; gap: 10px; background: var(--gradient-primary); color: white; text-decoration: none; border: none; box-shadow: var(--shadow-glow);">Consult an Expert Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-bottom-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="vision-test.html" class="nav-item active">
+            <i class="fas fa-eye"></i>
+            <span>Test</span>
+        </a>
+        <a href="appointment.html" class="nav-item">
+            <i class="far fa-calendar-alt"></i>
+            <span>Book</span>
+        </a>
+        <a href="tel:+919876543210" class="nav-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call</span>
+        </a>
+    </div>
+</body>
+</html>
+
+

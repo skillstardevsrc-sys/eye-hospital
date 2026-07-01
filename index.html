@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Premium Eye Hospital - Your Vision, Our Mission. Advanced technology, expert care, and compassion for your beautiful eyes.">
+    <title>Clear Vision Eye Hospital | Premium Care</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome for Icons (using CDN as placeholders for /icons/) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="eye-loader"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar"
+        style="background: #E8F0FE; color: var(--dark-blue); padding: 8px 0; font-size: 0.85rem; font-weight: 500;">
+        <div class="container top-bar-content"
+            style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="top-bar-left">
+                <span>Welcome to Clear Vision Eye Hospital</span>
+            </div>
+            <div class="top-bar-right" style="display: flex; gap: 20px;">
+                <span>Emergency Care 24/7</span>
+                <span><i class="fas fa-phone-alt" style="color: var(--primary-blue);"></i> +91 98765 43210</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass-panel"
+        style="padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.05); transition: all 0.3s ease;">
+        <div class="container nav-container"
+            style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center;">
+                <a href="javascript:history.back()" class="mobile-back-btn" style="display: none; color: var(--dark-blue); font-size: 1.5rem; margin-right: 15px;"><i class="fas fa-arrow-left"></i></a>
+                <a href="index.html" class="logo"
+                    style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <i class="fas fa-eye"
+                        style="font-size: 2.2rem; color: var(--primary-blue); filter: drop-shadow(0 2px 5px rgba(10,132,255,0.3));"></i>
+                    <div style="display: flex; flex-direction: column;">
+                        <span
+                            style="font-size: 1.5rem; font-weight: 800; color: var(--dark-blue); line-height: 1; letter-spacing: -0.5px;">CLEAR
+                            VISION</span>
+                        <span
+                            style="font-size: 0.75rem; font-weight: 600; color: var(--text-muted); letter-spacing: 2px;">EYE
+                            HOSPITAL</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-links" style="display: flex; gap: 28px; align-items: center;">
+                <a href="index.html" class="active"
+                    style="color: var(--primary-blue); font-weight: 600; text-decoration: none; position: relative;">Home</a>
+                <a href="about.html"
+                    style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">About
+                    Us</a>
+                <a href="services.html"
+                    style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Services</a>
+                <a href="doctors.html"
+                    style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Doctors</a>
+                <a href="technology.html"
+                    style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Technology</a>
+                <a href="contact.html"
+                    style="color: var(--text-main); font-weight: 500; text-decoration: none; transition: color var(--transition-fast);">Contact</a>
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <a href="vision-test.html" class="btn"
+                    style="color: var(--text-main); padding: 10px 20px; border-radius: 30px; font-weight: 600; text-decoration: none; background: rgba(0,0,0,0.03); transition: all 0.2s;">Vision
+                    Test <i class="fas fa-eye" style="margin-left: 5px;"></i></a>
+                <a href="appointment.html" class="btn btn-primary pulse-button"
+                    style="color:white; padding: 12px 28px; border-radius: 30px; font-weight: 600; display: flex; align-items: center; gap: 8px; text-decoration: none; background: var(--gradient-primary); border: none; box-shadow: var(--shadow-glow);">Book
+                    Appointment</a>
+                <div class="mobile-menu-btn"
+                    style="width: 45px; height: 45px; border-radius: 50%; background: var(--background-alt); display: flex; justify-content: center; align-items: center; cursor: pointer; color: var(--text-main);">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Futuristic Hero Section -->
+    <header class="hero-premium">
+
+        <!-- Animated Background Elements -->
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+
+        <!-- Floating Contact Sidebar -->
+        <div class="floating-contact">
+            <a href="https://wa.me/123" class="f-contact-btn green"><i class="fab fa-whatsapp"></i><span
+                    class="f-tooltip">WhatsApp</span></a>
+        </div>
+
+        <div class="container hero-premium-container">
+            <!-- Left Content -->
+            <div class="hero-premium-content reveal-left">
+
+                <div class="trust-chip glass-panel">
+                    <div class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="patient">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="patient">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="patient">
+                    </div>
+                    <span style="font-size: 0.8rem; font-weight: 600;">Trusted by 50,000+ Happy Patients</span>
+                </div>
+
+                <h1 class="hero-premium-title">
+                    Your Vision,<br>
+                    Our <span class="highlight">Mission</span>
+
+                </h1>
+
+                <p class="hero-premium-subtitle">
+                    Advanced technology, expert care and compassion for your beautiful eyes. Experience the world-class
+                    eye treatment with us.
+                </p>
+
+                <div class="hero-premium-actions">
+                    <a href="appointment.html" class="btn btn-primary pulse-button"
+                        style="border-radius: 30px; box-shadow: var(--shadow-glow);"><i class="far fa-calendar-alt"></i>
+                        Book Appointment</a>
+                    <a href="tel:+919876543210" class="btn btn-outline glass-panel"
+                        style="border-radius: 30px; border-color: transparent;"><i class="fas fa-phone-alt"></i>
+                        Emergency Care</a>
+                </div>
+            </div>
+
+            <!-- AI Interactive Eye Scanner -->
+            <div class="ai-eye-scanner" id="parallax-container">
+                <div class="ambient-glow"></div>
+                <div class="particles-container" id="particles"></div>
+
+                <!-- Floating HUD Cards -->
+                <div class="hud-card card-top-left glass-panel">
+                    <i class="fas fa-check-circle" style="color: #34c759;"></i>
+                    <span>Retina Healthy – 98%</span>
+                </div>
+                <div class="hud-card card-top-right glass-panel">
+                    <i class="fas fa-crosshairs" style="color: var(--accent-cyan);"></i>
+                    <span>Focus Locked</span>
+                </div>
+                <div class="hud-card card-bottom-left glass-panel">
+                    <i class="fas fa-brain" style="color: var(--primary-blue);"></i>
+                    <span>AI Vision Analysis</span>
+                </div>
+                <div class="hud-card card-bottom-right glass-panel">
+                    <i class="fas fa-eye" style="color: #ff9500;"></i>
+                    <span>Iris Scan – Active</span>
+                </div>
+
+                <!-- Core Eye Graphic -->
+                <div class="eye-core" id="parallax-eye">
+                    <div class="eye-image-wrapper">
+                        <img src="image copy.png" alt="Eye"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+
+                    <!-- Concentric HUD Rings -->
+                    <div class="ai-hud-ring ai-ring-inner"></div>
+                    <div class="ai-hud-ring ai-ring-middle"></div>
+                    <div class="ai-hud-ring ai-ring-outer"></div>
+
+                    <!-- Scanner Effects -->
+                    <div class="ai-scanner-beam"></div>
+                    <div class="ai-iris-pulse"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Horizontal Stats Bar -->
+        <div class="container">
+            <div class="hero-stats-row glass-panel reveal-up">
+                <div class="h-stat-item">
+                    <div class="icon-circle"><i class="fas fa-medal"></i></div>
+                    <div>
+                        <strong>25+</strong>
+                        <span>Years Experience</span>
+                    </div>
+                </div>
+                <div class="h-stat-item">
+                    <div class="icon-circle"><i class="fas fa-users"></i></div>
+                    <div>
+                        <strong>50,000+</strong>
+                        <span>Happy Patients</span>
+                    </div>
+                </div>
+                <div class="h-stat-item">
+                    <div class="icon-circle"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Emergency Care</span>
+                    </div>
+                </div>
+                <div class="h-stat-item">
+                    <div class="icon-circle"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Safe & Trusted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="section container">
+        <div class="section-header reveal-up">
+            <span
+                style="color: var(--primary-blue); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">Our
+                Specialities</span>
+            <h2 class="section-title">Comprehensive Eye Care Services</h2>
+        </div>
+
+        <div class="grid grid-4">
+            <div class="service-card reveal-up">
+                <div class="service-img" style="cursor: pointer;" data-title="Cataract"
+                    data-desc="Advanced cataract surgery using the latest micro-incision techniques and premium intraocular lenses for clear, youthful vision."
+                    data-icon="fas fa-eye">
+                    <i class="fas fa-eye service-icon"></i>
+                </div>
+                <h3>Cataract</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Advanced cataract surgery
+                    for clear vision.</p>
+                <a href="javascript:void(0)" class="service-img" style="color: var(--primary-blue); font-weight: 600;"
+                    data-title="Cataract"
+                    data-desc="Advanced cataract surgery using the latest micro-incision techniques and premium intraocular lenses for clear, youthful vision."
+                    data-icon="fas fa-eye">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card reveal-up" style="transition-delay: 0.1s;">
+                <div class="service-img" style="cursor: pointer;" data-title="LASIK Surgery"
+                    data-desc="Experience the freedom of a glasses-free life with our 100% blade-free, state-of-the-art LASIK laser vision correction."
+                    data-icon="fas fa-magic">
+                    <i class="fas fa-magic service-icon"></i>
+                </div>
+                <h3>LASIK Surgery</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Blade-free LASIK for
+                    glasses-free life.</p>
+                <a href="javascript:void(0)" class="service-img" style="color: var(--primary-blue); font-weight: 600;"
+                    data-title="LASIK Surgery"
+                    data-desc="Experience the freedom of a glasses-free life with our 100% blade-free, state-of-the-art LASIK laser vision correction."
+                    data-icon="fas fa-magic">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card reveal-up" style="transition-delay: 0.2s;">
+                <div class="service-img" style="cursor: pointer;" data-title="Retina Care"
+                    data-desc="Comprehensive diagnosis and advanced treatment options for all retinal disorders including diabetic retinopathy and macular degeneration."
+                    data-icon="fas fa-crosshairs">
+                    <i class="fas fa-crosshairs service-icon"></i>
+                </div>
+                <h3>Retina Care</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Diagnosis and treatment
+                    for retina disorders.</p>
+                <a href="javascript:void(0)" class="service-img" style="color: var(--primary-blue); font-weight: 600;"
+                    data-title="Retina Care"
+                    data-desc="Comprehensive diagnosis and advanced treatment options for all retinal disorders including diabetic retinopathy and macular degeneration."
+                    data-icon="fas fa-crosshairs">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card reveal-up" style="transition-delay: 0.3s;">
+                <div class="service-img" style="cursor: pointer;" data-title="Pediatric Eye Care"
+                    data-desc="Specialized, gentle eye care for children of all ages, ensuring early detection and management of vision problems."
+                    data-icon="fas fa-child">
+                    <i class="fas fa-child service-icon"></i>
+                </div>
+                <h3>Pediatric Eye Care</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Specialized eye care for
+                    your little ones.</p>
+                <a href="javascript:void(0)" class="service-img" style="color: var(--primary-blue); font-weight: 600;"
+                    data-title="Pediatric Eye Care"
+                    data-desc="Specialized, gentle eye care for children of all ages, ensuring early detection and management of vision problems."
+                    data-icon="fas fa-child">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Eye Anatomy Section -->
+    <section class="section" style="background: white;" id="anatomy">
+        <div class="container">
+            <div class="section-header reveal-up" style="text-align: center;">
+                <span
+                    style="color: var(--primary-blue); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1.5px;">Educational</span>
+                <h2 class="section-title">Interactive Eye Anatomy</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Explore the complex and beautiful
+                    structure of the human eye. Hover over the parts to learn more.</p>
+            </div>
+
+            <div class="anatomy-container reveal-up"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-top: 50px;">
+                <!-- SVG Side -->
+                <div class="anatomy-visual glass-panel"
+                    style="padding: 40px; border-radius: 30px; display: flex; justify-content: center; background: var(--background-alt); position: relative;">
+                    <svg width="100%" height="auto" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                        id="eye-svg" style="max-width: 400px; overflow: visible;">
+                        <!-- Sclera -->
+                        <circle cx="250" cy="250" r="140" fill="#ffffff" stroke="#e5e5ea" stroke-width="4" />
+                        <!-- Retina -->
+                        <path d="M 250 115 A 135 135 0 0 1 250 385" fill="none" stroke="#ff3b30" stroke-width="12"
+                            stroke-linecap="round" class="anatomy-part" data-part="retina" />
+                        <!-- Optic Nerve -->
+                        <path d="M 385 225 C 430 220 460 200 500 180 L 500 240 C 460 250 430 275 385 275 Z"
+                            fill="#ff9500" class="anatomy-part" data-part="nerve" />
+                        <!-- Lens -->
+                        <ellipse cx="160" cy="250" rx="20" ry="50" fill="rgba(10, 255, 255, 0.8)" class="anatomy-part"
+                            data-part="lens" />
+                        <!-- Iris -->
+                        <path d="M 130 180 Q 115 250 130 320" fill="none" stroke="#0a84ff" stroke-width="16"
+                            stroke-linecap="round" class="anatomy-part" data-part="iris" />
+                        <!-- Cornea -->
+                        <path d="M 120 155 Q 40 250 120 345" fill="none" stroke="#34c759" stroke-width="18"
+                            stroke-linecap="round" class="anatomy-part" data-part="cornea" />
+                    </svg>
+                </div>
+
+                <!-- Cards Side -->
+                <div class="anatomy-content">
+                    <div class="anatomy-card" data-part="cornea">
+                        <h4>Cornea</h4>
+                        <p>The clear front surface of the eye. It acts like a camera lens, focusing light as it enters
+                            the eye.</p>
+                    </div>
+                    <div class="anatomy-card" data-part="iris">
+                        <h4>Iris</h4>
+                        <p>The colored part of the eye that controls the size of the pupil to regulate light.</p>
+                    </div>
+                    <div class="anatomy-card" data-part="lens">
+                        <h4>Lens</h4>
+                        <p>A transparent structure behind the iris that helps focus light directly onto the retina.</p>
+                    </div>
+                    <div class="anatomy-card" data-part="retina">
+                        <h4>Retina</h4>
+                        <p>The light-sensitive tissue at the back of the eye that converts light into electrical
+                            signals.</p>
+                    </div>
+                    <div class="anatomy-card" data-part="nerve">
+                        <h4>Optic Nerve</h4>
+                        <p>The bundle of nerve fibers that carries visual information from the retina to the brain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Journey Section -->
+    <section class="section" style="background: var(--background-alt); position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="section-header reveal-up" style="text-align: center;">
+                <span style="display: inline-block; padding: 6px 16px; background: rgba(10, 132, 255, 0.1); color: var(--primary-blue); border-radius: 30px; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1.5px; margin-bottom: 15px;">Patient Experience</span>
+                <h2 class="section-title">Your Treatment Journey</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">A simple, transparent, and comfortable path to better vision.</p>
+            </div>
+
+            <div class="treatment-timeline">
+                
+                <!-- Step 1 -->
+                <div class="t-step reveal-up">
+                    <div class="t-icon-wrapper">
+                        <div class="t-icon"><i class="far fa-calendar-check"></i></div>
+                    </div>
+                    <div class="t-content">
+                        <div class="t-num">01</div>
+                        <div class="t-text">
+                            <h3>Book Appointment</h3>
+                            <p>Schedule your visit online or call our 24/7 helpline.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="t-step reveal-up" style="transition-delay: 0.1s;">
+                    <div class="t-icon-wrapper">
+                        <div class="t-icon"><i class="fas fa-microscope"></i></div>
+                    </div>
+                    <div class="t-content">
+                        <div class="t-num">02</div>
+                        <div class="t-text">
+                            <h3>Eye Examination</h3>
+                            <p>Comprehensive 360° eye testing using advanced diagnostic tools.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="t-step reveal-up" style="transition-delay: 0.2s;">
+                    <div class="t-icon-wrapper">
+                        <div class="t-icon"><i class="fas fa-user-md"></i></div>
+                    </div>
+                    <div class="t-content">
+                        <div class="t-num">03</div>
+                        <div class="t-text">
+                            <h3>Diagnosis & Consultation</h3>
+                            <p>Expert consultation to understand your specific eye condition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="t-step reveal-up" style="transition-delay: 0.3s;">
+                    <div class="t-icon-wrapper">
+                        <div class="t-icon"><i class="fas fa-procedures"></i></div>
+                    </div>
+                    <div class="t-content">
+                        <div class="t-num">04</div>
+                        <div class="t-text">
+                            <h3>Treatment / Surgery</h3>
+                            <p>Painless, precision-guided treatment by our top specialists.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="t-step reveal-up" style="transition-delay: 0.4s;">
+                    <div class="t-icon-wrapper">
+                        <div class="t-icon"><i class="fas fa-smile"></i></div>
+                    </div>
+                    <div class="t-content">
+                        <div class="t-num">05</div>
+                        <div class="t-text">
+                            <h3>Recovery</h3>
+                            <p>Quick recovery with our dedicated post-operative care.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us & Stats -->
+    <section class="section" style="background: white;">
+        <div class="container grid grid-2" style="align-items: center;">
+            <div class="reveal-left">
+                <span
+                    style="color: var(--primary-blue); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">Why
+                    Choose Us?</span>
+                <h2 class="section-title" style="margin-bottom: 30px;">Excellence in Eye Care</h2>
+
+                <ul class="checklist">
+                    <li><i class="fas fa-check-circle"></i> Advanced Technology</li>
+                    <li><i class="fas fa-check-circle"></i> Expert & Experienced Doctors</li>
+                    <li><i class="fas fa-check-circle"></i> Personalized Patient Care</li>
+                    <li><i class="fas fa-check-circle"></i> Transparent & Affordable</li>
+                    <li><i class="fas fa-check-circle"></i> World Class Infrastructure</li>
+                </ul>
+            </div>
+
+            <div class="stats-container reveal-right">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <span style="color: var(--text-muted); font-weight: 500;">Years of Experience</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <span style="color: var(--text-muted); font-weight: 500;">Happy Patients</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <span style="color: var(--text-muted); font-weight: 500;">Expert Doctors</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <span style="color: var(--text-muted); font-weight: 500;">Success Rate (%)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="section container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px;"
+            class="reveal-up">
+            <div>
+                <span
+                    style="color: var(--primary-blue); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">Meet
+                    Our Experts</span>
+                <h2 class="section-title" style="margin-bottom: 0;">Our Top Eye Specialists</h2>
+            </div>
+            <a href="doctors.html" class="btn btn-outline" style="padding: 8px 20px;">View All Doctors <i
+                    class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="grid grid-3">
+            <!-- Doctor 1 -->
+            <div class="doctor-card reveal-up">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80"
+                    alt="Dr. Arvind Kumar" class="doctor-img" style="cursor: pointer;" data-name="Dr. Arvind Kumar"
+                    data-role="Cataract & Refractive Surgeon" data-exp="15+ Years Experience"
+                    data-desc="Dr. Arvind Kumar is a pioneer in blade-free LASIK and micro-incision cataract surgery. He has successfully performed over 10,000 surgeries and is recognized globally for his contributions to refractive surgery.">
+                <div class="doctor-info">
+                    <h4>Dr. Arvind Kumar</h4>
+                    <p>Cataract & Refractive Surgeon</p>
+                    <span style="display:block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">15+
+                        Years Experience</span>
+                    <a href="appointment.html" class="btn btn-outline" style="width: 100%;">Book Appointment</a>
+                </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="doctor-card reveal-up" style="transition-delay: 0.1s;">
+                <img src="https://img.freepik.com/premium-photo/portrait-young-beautiful-smiling-indian-female-doctor-standing-isolated-background_1025753-91537.jpg?w=2000"
+                    alt="Dr. Priya Natarajan" class="doctor-img" style="cursor: pointer;"
+                    data-name="Dr. Priya Natarajan" data-role="Retina Specialist" data-exp="12+ Years Experience"
+                    data-desc="Dr. Priya specializes in diabetic retinopathy, macular degeneration, and complex retinal detachments. She is passionate about restoring vision using the latest therapeutic and surgical techniques.">
+                <div class="doctor-info">
+                    <h4>Dr. Priya Natarajan</h4>
+                    <p>Retina Specialist</p>
+                    <span style="display:block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">12+
+                        Years Experience</span>
+                    <a href="appointment.html" class="btn btn-outline" style="width: 100%;">Book Appointment</a>
+                </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="doctor-card reveal-up" style="transition-delay: 0.2s;">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80"
+                    alt="Dr. Rohan Shetty" class="doctor-img" style="cursor: pointer;" data-name="Dr. Rohan Shetty"
+                    data-role="Glaucoma Specialist" data-exp="10+ Years Experience"
+                    data-desc="Dr. Rohan Shetty is a leading expert in the early diagnosis and management of glaucoma. He employs cutting-edge minimally invasive glaucoma surgeries (MIGS) to help patients preserve their sight.">
+                <div class="doctor-info">
+                    <h4>Dr. Rohan Shetty</h4>
+                    <p>Glaucoma Specialist</p>
+                    <span style="display:block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">10+
+                        Years Experience</span>
+                    <a href="appointment.html" class="btn btn-outline" style="width: 100%;">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="section" style="background: var(--background);">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span
+                    style="color: var(--primary-blue); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">State-of-the-art
+                    Technology</span>
+                <h2 class="section-title">Advanced Technology Better Results</h2>
+                <p class="section-subtitle">We use the latest technology and equipment to provide accurate diagnosis and
+                    effective treatment.</p>
+            </div>
+
+            <div class="grid grid-3" id="tech-slider">
+                <!-- Tech Card 1 -->
+                <div class="service-card reveal-up">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=400&q=80"
+                        alt="ZEISS OCT" style="border-radius: var(--radius-md); margin-bottom: 20px;">
+                    <h4>ZEISS OCT</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Retina Imaging</p>
+                </div>
+                <!-- Tech Card 2 -->
+                <div class="service-card reveal-up" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=400&q=80"
+                        alt="Femto LDV Z8" style="border-radius: var(--radius-md); margin-bottom: 20px;">
+                    <h4>Femto LDV Z8</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">LASIK Laser System</p>
+                </div>
+                <!-- Tech Card 3 -->
+                <div class="service-card reveal-up" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=400&q=80"
+                        alt="Pentacam AXL" style="border-radius: var(--radius-md); margin-bottom: 20px;">
+                    <h4>Pentacam AXL</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Eye Diagnostic System</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;" class="reveal-up">
+                <a href="technology.html" class="btn btn-primary">Explore Technology <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Map Section -->
+    <section class="section container">
+        <div class="grid grid-2" style="gap: 60px;">
+            <div class="reveal-left">
+                <span
+                    style="color: var(--primary-blue); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">Book
+                    Appointment</span>
+                <h2 class="section-title" style="margin-bottom: 30px;">Schedule Your Visit</h2>
+
+                <form id="home-appointment-form"
+                    style="background: white; padding: 30px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--border);">
+                    <div class="grid grid-2" style="gap: 15px; margin-bottom: 15px;">
+                        <input type="text" class="form-control" placeholder="Full Name" required>
+                        <input type="tel" class="form-control" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="grid grid-2" style="gap: 15px; margin-bottom: 15px;">
+                        <select class="form-control" required>
+                            <option value="">Select Service</option>
+                            <option value="cataract">Cataract</option>
+                            <option value="lasik">LASIK</option>
+                        </select>
+                        <select class="form-control" required>
+                            <option value="">Select Doctor</option>
+                            <option value="dr-arvind">Dr. Arvind</option>
+                            <option value="dr-priya">Dr. Priya</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-2" style="gap: 15px; margin-bottom: 20px;">
+                        <input type="date" class="form-control" required>
+                        <input type="time" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Book Appointment Now <i
+                            class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+
+            <div class="reveal-right">
+                <span
+                    style="color: var(--primary-blue); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">Visit
+                    Us</span>
+                <h2 class="section-title" style="margin-bottom: 30px;">We're Here to Help</h2>
+                <div
+                    style="border-radius: var(--radius-lg); overflow: hidden; height: 350px; box-shadow: var(--shadow-md);">
+                    <!-- Placeholder Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8931407338045!2d80.20815131482206!3d13.042456990809228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266c1b3f7ef8f%3A0x6b637500b1d3d63c!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1622616239923!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark-blue); color: white; padding: 60px 0 20px; margin-top: 60px;">
+        <div class="container grid grid-4" style="margin-bottom: 40px;">
+            <div>
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
+                    <i class="fas fa-eye" style="color: var(--accent-cyan);"></i>
+                    Clear Vision
+                </a>
+                <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 20px;">Better Vision. Better Life.
+                    Experience the best eye care with our advanced technology and expert doctors.</p>
+                <div style="display:flex; gap: 15px;">
+                    <a href="#" style="color: white; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: white; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="color: white; font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div style="margin-top: 100px;">
+                <h4 style="color: white; margin-bottom: 20px;">Quick Links</h4>
+                <ul style="list-style:none; padding:0;">
+                    <li style="margin-bottom: 10px;"><a href="index.html" style="color: #cbd5e1;">Home</a></li>
+                    <li style="margin-bottom: 10px;"><a href="about.html" style="color: #cbd5e1;">About Us</a></li>
+                    <li style="margin-bottom: 10px;"><a href="services.html" style="color: #cbd5e1;">Services</a></li>
+                    <li style="margin-bottom: 10px;"><a href="doctors.html" style="color: #cbd5e1;">Doctors</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 style="color: white; margin-bottom: 20px;">Our Services</h4>
+                <ul style="list-style:none; padding:0;">
+                    <li style="margin-bottom: 10px;"><a href="services.html" style="color: #cbd5e1;">Cataract
+                            Surgery</a></li>
+                    <li style="margin-bottom: 10px;"><a href="services.html" style="color: #cbd5e1;">LASIK Surgery</a>
+                    </li>
+                    <li style="margin-bottom: 10px;"><a href="services.html" style="color: #cbd5e1;">Retina Care</a>
+                    </li>
+                    <li style="margin-bottom: 10px;"><a href="services.html" style="color: #cbd5e1;">Glaucoma Care</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 style="color: white; margin-bottom: 20px;">Contact Us</h4>
+                <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 10px;"><i class="fas fa-map-marker-alt"
+                        style="margin-right:8px;"></i> 123 Vision Street, NY 10001</p>
+                <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 10px;"><i class="fas fa-phone-alt"
+                        style="margin-right:8px;"></i> +91 98765 43210</p>
+                <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 10px;"><i class="fas fa-envelope"
+                        style="margin-right:8px;"></i> info@clearvision.com</p>
+            </div>
+        </div>
+        <div class="container"
+            style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; color: #cbd5e1; font-size: 0.85rem;">
+            &copy; 2026 Clear Vision Eye Hospital. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal-content" style="max-width: 600px; text-align: center;">
+            <span class="close-modal" id="closeServiceModal"><i class="fas fa-times"></i></span>
+            <div class="modal-body">
+                <div style="font-size: 4rem; color: var(--primary-blue); margin-bottom: 20px;"><i
+                        id="service-modal-icon"></i></div>
+                <h3 id="service-modal-title" style="font-size: 1.8rem; margin-bottom: 15px;"></h3>
+                <p id="service-modal-desc" style="color: var(--text-muted); margin-bottom: 30px; line-height: 1.8;"></p>
+                <a href="appointment.html" class="btn btn-primary" style="width: 100%;">Book Appointment for this
+                    Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Doctor Modal -->
+    <div class="modal-overlay" id="doctorModal">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-body grid grid-2" style="gap: 30px; align-items: center;">
+                <div>
+                    <img src="" alt="Doctor Image" id="modal-img"
+                        style="border-radius: var(--radius-lg); width: 100%; height: 350px; object-fit: cover; box-shadow: var(--shadow-md);">
+                </div>
+                <div>
+                    <h3 id="modal-name" style="font-size: 1.8rem; margin-bottom: 5px;"></h3>
+                    <p id="modal-role" style="color: var(--primary-blue); font-weight: 600; margin-bottom: 15px;"></p>
+                    <div
+                        style="display: inline-block; background: rgba(16, 185, 129, 0.1); color: var(--success); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px;">
+                        <i class="fas fa-certificate"></i> <span id="modal-exp"></span>
+                    </div>
+                    <p id="modal-desc" style="color: var(--text-muted); margin-bottom: 30px; line-height: 1.8;"></p>
+                    <a href="appointment.html" class="btn btn-primary" style="width: 100%;">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="js/app.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/appointment.js"></script>
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-bottom-nav">
+        <a href="index.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="vision-test.html" class="nav-item">
+            <i class="fas fa-eye"></i>
+            <span>Test</span>
+        </a>
+        <a href="appointment.html" class="nav-item">
+            <i class="far fa-calendar-alt"></i>
+            <span>Book</span>
+        </a>
+        <a href="tel:+919876543210" class="nav-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call</span>
+        </a>
+    </div>
+</body>
+
+</html>
+
